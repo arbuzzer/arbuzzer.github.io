@@ -34,16 +34,23 @@ header {
 	font-family: "Neue Haas Unica Pro Light";
 	height: 89px;
 	color: #fff;
-}
-.top-text {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	width: 68%;
-	padding-top: 29px;
+	align-items: center;
 }
-.top__text {
+.container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.menu,.auth {
+	margin: 0;
+	width: 34%;
+	max-width: 34%;
+	flex-basis: 34%;
+}
+.auth a {
 	float: right;
+	margin: 0;
 }
 nav {
 	margin-top: 4px;
@@ -64,11 +71,15 @@ nav a {
 	color: #fff;
 	margin-right: 30px;
 }
+video {
+	max-width: 100%;
+}
 .video {
 	position: relative;
-	max-height: 100vh;
 	height: 100vh;
+	max-height: 100vh;
 	overflow: hidden;
+	height: auto;
 }
 .video__header {
 	position: absolute;
@@ -143,7 +154,6 @@ nav a {
 	display: block;
 }
 .about {
-	padding-top: 160px;
 	display: flex;
 	height: 1572px;
 	background-color: #000;
@@ -151,7 +161,7 @@ nav a {
 	text-align: center;
 }
 .about__top {
-	padding-top: 160px;
+	margin-top: 140px;
 	line-height: 26.04px;
 	text-align: center;
 }
@@ -174,7 +184,6 @@ h3 {
 .about__text {
 	margin: 0 auto;
 	width: 899px;
-	line-height: 40px;
 	text-align: center;
 }
 p {
@@ -237,6 +246,7 @@ p {
 	height: 540px;
 }
 .dropped__text {
+	line-height: 35px;
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 76px;
@@ -285,21 +295,80 @@ footer {
 	font-size: 17px;
 }
 
-/*
-.video {
-	margin: 0 auto;
-	position: relative;
-	text-align: center;
-	width: 100%;
+@media screen and (max-width: 1024px) {
+	.logo img {
+		height: 22px;
+	}
+	.about__top h2 {
+		font-size: 25px;
+	}
+	.about__text strong {
+		font-size: 	25px;
+	}
+	p {
+		font-size: 20px;
+	}
+	.video-text {
+		font-size: 5vw;
+	}
+	.about__top {
+		margin-top: 40px;
+	}
+	.about__text {
+		max-width: 850px;
+	}
+	.undercover__text {
+		max-width: 850px;
+	}
+	.desert__text {
+		max-width: 850px;
+	}
 }
-video {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0 auto;
-	z-index: -1;
-	width: 100%;
-    min-height: 100%;
-} */
+@media screen and (max-width: 768px) {
+	.logo img {
+		height: 22px;
+	}
+	.about__top h2 {
+		font-size: 25px;
+	}
+	.about__text strong {
+		font-size: 	15px;
+	}
+	p {
+		font-size: 15px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.video-text {
+		line-height: 100px;
+	}
+	.video-text {
+		font-size: 6vw;
+	}
+	.about {
+		height: 1200px;
+	}
+	.about__top {
+		margin-top: 40px;
+	}
+	.about__text {
+		max-width: 570px;
+	}
+	.undercover {
+		height: 400px;
+	}
+	.undercover__text {
+		max-width: 570px;
+	}
+	.dropped {
+		height: 450px;
+	}
+	.dropped__text {
+		max-width: 570px;
+	}
+	footer {
+		height: 125px;
+		padding-top: 35px;
+	}
+}
