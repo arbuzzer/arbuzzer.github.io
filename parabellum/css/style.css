@@ -365,14 +365,14 @@ footer {
 		padding-right: 25px;
 	}
 	.menu {
-		margin: 0;
-		width: 34%;
-		max-width: 34%;
-		flex-basis: 34%;
+		position: fixed;
 	}
 	.menu__icon{
 		display: inline-block;
 		z-index: 2000;
+	}
+	.logo {
+		margin: 0 auto;
 	}
 	.auth {
 		display: none;
@@ -430,9 +430,25 @@ footer {
 	}
 }
 @media screen and (max-width: 768px) {
+	.top_menu {
+     	font-family: "Neue Haas Unica Pro Light";
+		height: 89px;
+		color: #fff;
+		display: flex;
+	}
+	.container {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.menu {
+		position: fixed;
+	}
 	.menu__icon{
 		display: inline-block;
 		z-index: 2000;
+	}
+	.logo {
+		margin: 0 auto;
 	}
 	.auth {
 		display: none;
