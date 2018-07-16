@@ -11,7 +11,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: #000;
 	z-index: 99999999;
 }
 #about {
@@ -29,6 +29,64 @@ header {
 #contact {
 	margin-top: -89px;
 	padding-top: 89px;
+}
+.menu__links-item:last-child {
+	display: none;
+}
+.menu__icon {
+    display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+    top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+    top: 26px;
+}
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+    display: block;  
 }
 .top_menu {
 	font-family: "Neue Haas Unica Pro Light";
@@ -296,6 +354,53 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+	.top_menu {
+     	font-family: "Neue Haas Unica Pro Light";
+		height: 89px;
+		color: #fff;
+		display: flex;
+	}
+	.container {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.menu {
+		margin: 0;
+		width: 34%;
+		max-width: 34%;
+		flex-basis: 34%;
+	}
+	.menu__icon{
+		display: inline-block;
+		z-index: 2000;
+	}
+	.auth {
+		display: none;
+	}
+	.menu__links {
+		height: 100%;
+		width: 25%;
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 1000;
+		overflow: auto;
+		padding: 100px 0 0 30px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.menu__links-item {
+		padding-top: 20px;
+		display: block;
+		text-align: left;
+		color: #ffffff;
+	}
+	.menu__links-item:last-child {
+		display: block;
+	}
 	.logo img {
 		height: 22px;
 	}
@@ -325,6 +430,37 @@ footer {
 	}
 }
 @media screen and (max-width: 768px) {
+	.menu__icon{
+		display: inline-block;
+		z-index: 2000;
+	}
+	.auth {
+		display: none;
+	}
+	.menu__links {
+		height: 100%;
+		width: 27%;
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 1000;
+		overflow: auto;
+		padding: 100px 0 0 30px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.menu__links-item {
+		padding-top: 20px;
+		display: block;
+		text-align: left;
+		color: #ffffff;
+	}
+	.menu__links-item:last-child {
+		display: block;
+	}
 	.logo img {
 		height: 22px;
 	}

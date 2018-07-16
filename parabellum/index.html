@@ -12,10 +12,19 @@
 		<div class="container">
 			<div class="top_menu">
 				<nav id="menu" class="menu">
-					<a href="#about">About Us</a>
-					<a href="#espionage">Espionage Challenge</a>
-					<a href="#desert">Desert Challenge</a>
-					<a href="#contact">Contact Us</a>
+					<div class="menu__links">
+						<a href="#about" class="menu__links-item">About Us</a>
+						<a href="#espionage" class="menu__links-item">Espionage Challenge</a>
+						<a href="#desert" class="menu__links-item">Desert Challenge</a>
+						<a href="#contact" class="menu__links-item">Contact Us</a>
+						<a href="#contact" class="menu__links-item">Member Login</a>
+					</div>
+					<div class="menu__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</nav>
 				<div class="logo">
 					<a href="index.html">
@@ -145,11 +154,14 @@
     });
 });
 </script>
+<script>
+	(function($){
+  $(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu').toggleClass('menu_state_open');
+    });
+  });
+})(jQuery);
+</script>
 </body>
 </html>
-<!--
-			<div class="video">
-				<video autoplay loop muted>
-			    <source src="img/video.mp4" type="video/mp4">
-			  	</video>
-			  -->
