@@ -11,7 +11,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 99999999;
 }
 #about {
@@ -76,6 +76,7 @@ nav a {
 	top: 0;
 	height: auto;
 	z-index: 3;
+	width: 100%;
 }
 .overlay {
   background: rgba(0,0,0,0.4);
@@ -150,6 +151,7 @@ nav a {
 	text-align: center;
 }
 .about__top {
+	padding-top: 160px;
 	line-height: 26.04px;
 	text-align: center;
 }
@@ -243,15 +245,15 @@ p {
 	height: 271px;
 }
 footer {
-	height: 270px;
+	height: 200px;
 	background-color: #000;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding-top: 84px;
 }
 .contact {
-	padding-top: 84px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -268,6 +270,7 @@ footer {
 	letter-spacing: -0.7px;
 }
 .footer__mail {
+	font-family: "Neue Haas Unica Pro Light";
 	padding-top: 22px;
     padding-left: 20px;
     font-size: 17px;
@@ -282,6 +285,7 @@ footer {
 .footer__mail {
 	font-size: 17px;
 }
+
 /*
 .video {
 	margin: 0 auto;
