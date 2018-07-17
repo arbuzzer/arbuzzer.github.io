@@ -559,14 +559,14 @@ footer {
 }
 @media screen and (max-width: 480px) {
 	.video-text {
-		line-height: 200px;
+		line-height: 200%;
 	}
 	.video {
 		padding-top: 89px;
 		background-color: #000;
 	}
 	.video-text {
-		font-size: 4vw;
+		font-size: 2vw;
 	}
 	.about__top h2 {
 		font-size: 20px;
