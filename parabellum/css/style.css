@@ -241,7 +241,7 @@ h3 {
 }
 .about__text {
 	margin: 0 auto;
-	width: 90%;
+	width: 75%;
 	text-align: center;
 }
 p {
@@ -278,7 +278,7 @@ p {
 .undercover__text {
 	margin: 0 auto;
 	padding-top: 78px;
-	width: 90%;
+	width: 75%;
 	height: 166px;
 	line-height: 35px;
 	text-align: center;
@@ -308,7 +308,7 @@ p {
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 76px;
-	width: 90%;
+	width: 75%;
 	height: 271px;
 }
 footer {
@@ -354,6 +354,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+	.video-text {
+		line-height: 200%;
+	}
 	.top_menu {
      	font-family: "Neue Haas Unica Pro Light";
 		height: 89px;
@@ -561,7 +564,6 @@ footer {
 		background-color: #000;
 	}
 	.video-text {
-		line-height: 75px;
 		font-size: 6vw;
 	}
 	.about__top h2 {
