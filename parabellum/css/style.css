@@ -425,9 +425,6 @@ footer {
 	}
 }
 @media screen and (max-width: 768px) {
-	.video-text {
-		line-height: 250%;
-	}
 	.top_menu {
      	font-family: "Neue Haas Unica Pro Light";
 		height: 89px;
