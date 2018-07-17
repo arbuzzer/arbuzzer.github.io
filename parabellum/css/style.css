@@ -354,6 +354,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+	.video-text {
+		line-height: 225%;
+	}
 	.top_menu {
      	font-family: "Neue Haas Unica Pro Light";
 		height: 89px;
@@ -414,7 +417,7 @@ footer {
 		font-size: 20px;
 	}
 	.video-text {
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 	.about__top {
 		margin-top: 40px;
@@ -461,7 +464,6 @@ footer {
 		overflow: auto;
 		padding: 100px 0 0 30px;
 		font-size: 20px;
-		font-weight: bold;
 	}
 	.menu__links-item {
 		padding-top: 20px;
@@ -488,7 +490,7 @@ footer {
 		font-size: 20px;
 	}
 	.video-text {
-		font-size: 6vw;
+		font-size: 4vw;
 	}
 	.about {
 		height: 1200px;
@@ -517,7 +519,7 @@ footer {
 		background-color: #000;
 	}
 	.video-text {
-		font-size: 6vw;
+		font-size: 4vw;
 	}
 	.about__top h2 {
 		font-size: 20px;
@@ -561,7 +563,7 @@ footer {
 		background-color: #000;
 	}
 	.video-text {
-		font-size: 6vw;
+		font-size: 4vw;
 	}
 	.about__top h2 {
 		font-size: 20px;
@@ -604,7 +606,7 @@ footer {
 }
 @media screen and (max-height: 425px) {
 	.video-text {
-		font-size: 6vw;
+		font-size: 4vw;
 	}
 	.logo {
 		padding-left: 85px;
@@ -623,7 +625,7 @@ footer {
 		background-color: #000;
 	}
 	.video-text {
-		font-size: 6vw;
+		font-size: 4vw;
 	}
 	.about__top h2 {
 		font-size: 20px;
