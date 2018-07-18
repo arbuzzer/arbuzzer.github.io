@@ -352,7 +352,7 @@ footer {
 .footer__mail {
 	font-size: 17px;
 }
-@media screen and (max-height: 1024px) {
+@media screen and (max-width: 1280px) {
 	.logo img {
 		height: 18px;
 	}
