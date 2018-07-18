@@ -423,9 +423,6 @@ footer {
 	.menu__links-item:last-child {
 		display: block;
 	}
-	.logo img {
-		height: 22px;
-	}
 	.about__top h2 {
 		font-size: 25px;
 	}
