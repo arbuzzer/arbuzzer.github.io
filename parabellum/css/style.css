@@ -354,8 +354,8 @@ footer {
 }
 @media screen and (max-width: 1024px) {
 	.menu, .auth {
-		width: 37px;
-		min-width: 37px;
+		width: 37%;
+		min-width: 37%;
 	}
 	.logo img {
 		height: 20px;
