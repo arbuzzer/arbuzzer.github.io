@@ -152,17 +152,17 @@
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
+        $('.menu').removeClass('menu_state_open');
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
- 	(function($){
+   (function($){
   $(function() {
     $('.menu__icon').on('click', function() {
       $(this).closest('.menu').toggleClass('menu_state_open');
     });
   });
 })(jQuery);
-$('body,html').animate({scrollLeft: left}, 1500, function(){$( ".menu__icon" ).trigger( "click" )});
 </script>
 </body>
 </html>
