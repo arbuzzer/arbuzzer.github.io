@@ -12,13 +12,15 @@
 		<div class="container">
 			<div class="top_menu">
 				<nav id="menu" class="menu">
-					<div class="menu__links">
-						<a href="#about" class="menu__links-item">About Us</a>
-						<a href="#espionage" class="menu__links-item">Espionage Challenge</a>
-						<a href="#desert" class="menu__links-item">Desert Challenge</a>
-						<a href="#contact" class="menu__links-item">Contact Us</a>
-						<a href="#contact" class="menu__links-item">Member Login</a>
-					</div>
+					<div class="menu-links">
+						<div class="menu__links">
+							<a href="#about" class="menu__links-item">About Us</a>
+							<a href="#espionage" class="menu__links-item">Espionage Challenge</a>
+							<a href="#desert" class="menu__links-item">Desert Challenge</a>
+							<a href="#contact" class="menu__links-item">Contact Us</a>
+							<a href="#" class="menu__links-item">Member Login</a>
+						</div>
+					</div>	
 					<div class="menu__icon">
 						<span></span>
 						<span></span>
@@ -153,15 +155,14 @@
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
-</script>
-<script>
-	(function($){
+ 	(function($){
   $(function() {
     $('.menu__icon').on('click', function() {
       $(this).closest('.menu').toggleClass('menu_state_open');
     });
   });
 })(jQuery);
+$('body,html').animate({scrollLeft: left}, 1500, function(){$( ".menu__icon" ).trigger( "click" )});
 </script>
 </body>
 </html>
