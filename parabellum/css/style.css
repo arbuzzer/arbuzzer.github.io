@@ -352,7 +352,14 @@ footer {
 .footer__mail {
 	font-size: 17px;
 }
-
+@media screen and (min-height: 1024px) {
+	.menu__links-item {
+		padding-top: 20px;
+		display: block;
+		text-align: left;
+		color: #ffffff;
+	}	
+}	
 @media screen and (max-width: 1024px) {
 	.menu-links {
 		max-height: calc(100vh - 150px);
@@ -383,7 +390,7 @@ footer {
 	}
 	.menu__links {
 		height: 100%;
-		width: 25%;
+		width: 34%;
 		position: fixed;
 		display: none;
 		top: 0;
@@ -454,7 +461,7 @@ footer {
 	}
 	.menu__links {
 		height: 100%;
-		width: 27%;
+		width: 34%;
 		position: fixed;
 		display: none;
 		top: 0;
