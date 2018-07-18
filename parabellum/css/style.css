@@ -358,7 +358,10 @@ footer {
 		display: block;
 		text-align: left;
 		color: #ffffff;
-	}	
+	}
+	.men__links:last-child {
+		display: block;
+	}
 }	
 @media screen and (max-width: 1024px) {
 	.menu-links {
