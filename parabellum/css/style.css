@@ -565,8 +565,7 @@ footer {
 		background-color: #000;
 		z-index: 1000;
 		overflow: auto;
-		font-size: 25px;
-		font-weight: bold;
+		font-size: 15px;
 	}
 	.menu__links a {
 		display: flex;
