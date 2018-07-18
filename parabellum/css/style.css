@@ -508,6 +508,13 @@ footer {
 	}
 }
 @media screen and (max-width: 480px) {
+	.menu__links {
+		width: 100%;
+	}
+	.menu__links a {
+		text-align: center;
+		align-content: center;
+	}
 	.video {
 		padding-top: 89px;
 		background-color: #000;
@@ -594,8 +601,8 @@ footer {
 }
 @media screen and (max-width: 320px) {
 	.menu__icon {
-	    width: 35px;
-	    height: 25px;
+	    width: 45px;
+	    height: 35px;
 	}
 	.logo {
 		padding-top: 5px;
