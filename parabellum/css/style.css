@@ -509,28 +509,6 @@ footer {
 		padding-top: 35px;
 	}
 }
-@media screen and (min-height: 600px) {
-	.menu__links {
-		height: 100%;
-		width: 100%;
-		position: fixed;
-		display: none;
-		top: 0;
-		right: 0;
-		left: 0;
-		background-color: #000;
-		z-index: 1000;
-		overflow: auto;
-		font-size: 17px;
-	}
-	.menu__links a {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		text-align: center;
-		align-items: center;
-	}
-}
 @media screen and (max-width: 600px) {
 	.video {
 		padding-top: 89px;
@@ -574,8 +552,6 @@ footer {
 		height: 125px;
 		padding-top: 35px;
 	}
-}
-@media screen and (max-height: 480px) {
 }
 @media screen and (max-width: 480px) {
 	.video {
@@ -634,8 +610,28 @@ footer {
 	}
 }
 @media screen and (max-height: 425px) {
+	.menu__links {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 1000;
+		overflow: auto;
+	}
+	.menu__links a {
+		font-size: 17px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
 	.video-text {
-		line-height: 300%;
+		line-height: 250%;
 		font-size: 4vw;
 	}
 	.logo {
@@ -703,6 +699,26 @@ footer {
 	}
 }
 @media screen and (max-height: 320px) {
+	.menu__links {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 1000;
+		overflow: auto;
+	}
+	.menu__links a {
+		font-size: 17px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
 	.video-text {
 		font-size: 4vw;
 		line-height: 200%;
