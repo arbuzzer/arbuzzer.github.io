@@ -353,8 +353,8 @@ footer {
 	font-size: 17px;
 }
 @media screen and (max-width: 1024px) {
-	.logo a {
-		height: 18px;
+	.logo img {
+		height: 13px;
 	}
 	.about__top h2 {
 		font-size: 25px;
