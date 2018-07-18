@@ -388,7 +388,7 @@ footer {
 		z-index: 1000;
 		overflow: auto;
 		padding: 100px 0 0 25px;
-		font-size: 17px;
+		font-size: 20px;
 	}
 	.menu__links-item {
 		padding-top: 20px;
@@ -609,6 +609,26 @@ footer {
 	}
 }
 @media screen and (max-height: 425px) {
+	.menu__links {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 1000;
+		overflow: auto;
+	}
+	.menu__links a {
+		font-size: 17px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
 	.video-text {
 		line-height: 250%;
 		font-size: 4vw;
