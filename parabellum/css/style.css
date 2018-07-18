@@ -352,22 +352,7 @@ footer {
 .footer__mail {
 	font-size: 17px;
 }
-@media screen and (min-height: 1024px) {
-	.menu__links-item {
-		padding-top: 20px;
-		display: block;
-		text-align: left;
-		color: #ffffff;
-	}
-	.men__links:last-child {
-		display: block;
-	}
-}	
 @media screen and (max-width: 1024px) {
-	.menu-links {
-		max-height: calc(100vh - 150px);
-    	overflow-y: auto;
-	}
 	.top_menu {
      	font-family: "Neue Haas Unica Pro Light";
 		height: 89px;
@@ -402,7 +387,7 @@ footer {
 		background-color: #000;
 		z-index: 1000;
 		overflow: auto;
-		padding: 100px 0 0 30px;
+		padding: 100px 0 0 25px;
 		font-size: 25px;
 		font-weight: bold;
 	}
