@@ -354,7 +354,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
 	.logo img {
-		height: 13px;
+		height: 18px;
 	}
 	.about__top h2 {
 		font-size: 25px;
