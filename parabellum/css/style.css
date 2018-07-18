@@ -50,7 +50,11 @@ header {
     border-radius: 9px;
     opacity: 1;
     left: 0;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
 
@@ -72,11 +76,15 @@ header {
 }
 
 .menu.menu_state_open .menu__icon span:nth-child(2) {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .menu.menu_state_open .menu__icon span:nth-child(3) {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .menu.menu_state_open .menu__icon span:nth-child(4) {
@@ -92,9 +100,15 @@ header {
 	font-family: "Neue Haas Unica Pro Light";
 	height: 89px;
 	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .container {
 	padding-left: 25px;
@@ -104,7 +118,8 @@ header {
 	margin: 0;
 	width: 34%;
 	max-width: 34%;
-	flex-basis: 34%;
+	-ms-flex-preferred-size: 34%;
+	    flex-basis: 34%;
 }
 .auth a {
 	float: right;
@@ -121,8 +136,12 @@ nav a {
 }
 .logo{
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .login {
 	font-family: "Neue Haas Unica Pro Light";
@@ -171,7 +190,9 @@ video {
 	font-size: 4vw;
 	text-transform: uppercase;
 	text-align: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	line-height: 300%;
 	padding-top: 110px;
 }
@@ -212,10 +233,15 @@ video {
 	display: block;
 }
 .about {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 1572px;
 	background-color: #000;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: center;
 }
 .about__top {
@@ -258,7 +284,6 @@ p {
 	height: 594px;
 	background-image: url(../img/espionage_challenge_1.png);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	display: inline-block;
@@ -269,11 +294,18 @@ p {
 	padding-top: 200px;
 }
 .undercover {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	background-color: #000;
 	height: 513px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .undercover__text {
 	margin: 0 auto;
@@ -288,7 +320,6 @@ p {
 	height: 594px;
 	background-image: url(../img/espionage_challenge_2.png);
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	display: inline-block;
@@ -299,7 +330,9 @@ p {
 	padding-top: 200px;
 }
 .dropped {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-color: #000;
 	height: 540px;
 }
@@ -314,19 +347,34 @@ p {
 footer {
 	height: 200px;
 	background-color: #000;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	padding-top: 84px;
 }
 .contact {
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .footer__text {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
@@ -342,8 +390,13 @@ footer {
     padding-left: 20px;
     font-size: 17px;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     line-height: 26px;
 }
 .footer__mail a {
@@ -385,6 +438,8 @@ footer {
      	font-family: "Neue Haas Unica Pro Light";
 		height: 89px;
 		color: #fff;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 	.container {
@@ -513,7 +568,8 @@ footer {
 	}
 	.menu__links a {
 		text-align: center;
-		align-content: center;
+		-ms-flex-line-pack: center;
+		    align-content: center;
 	}
 	.video {
 		padding-top: 89px;
@@ -585,11 +641,20 @@ footer {
 	}
 	.menu__links a {
 		font-size: 17px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		text-align: center;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 	.video-text {
 		line-height: 250%;
