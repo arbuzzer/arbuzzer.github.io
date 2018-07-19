@@ -28,22 +28,22 @@ header{
 nav {
 	float: right;
 	margin-top: 47px;
+	width: 535px;
 }
-.menu {
+.topnav {
 	padding: 0;
 	margin: 0;
 	display: block;
 }
-.menu li {
-	float: left;
-	display: block;
+.topnav a {
 	margin-right: 41px;
 	font-size: 14px;
-}
-.menu a {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+.topnav .icon {
+	display: none;
 }
 .title_first{
 	color: #ffffff;

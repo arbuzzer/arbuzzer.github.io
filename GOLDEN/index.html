@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<body>
 		<header>
 			<div class="container">
 				<div class="heading clearfix">
@@ -14,23 +13,14 @@
 						<img src="img/logo.png" alt="Golden" class="logo">
 					</a>
 					<nav>
-						<ul class="menu">
-							<li>
-								<a href="#">Home</a>
-							</li>
-							<li>
-								<a href="#">Services</a>
-							</li>
-							<li>
-								<a href="#">Portfolio</a>
-							</li>
-							<li>
-								<a href="#">About</a>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-							</li>
-						</ul>
+						<div class="topnav" id="myTopnav">
+							<a href="index.html">Home</a>
+							<a href="#services">Services</a>
+							<a href="#portfolio">Portfolio</a>
+							<a href="#about">About</a>
+							<a href="#contact">Contact</a>
+							<a id="menu" href="#" class="icon">&#9776;</a>
+						</div>
 					</nav>
 				</div>
 				<div class="titles">
@@ -171,13 +161,13 @@
 				</div>
 			</div>
 		</section>
-		<footer>
+		<footer id="contact">
 			<div class="copyright">
 				<p align="center">
 					© Copyright 2014 FreebiesXpress.com
 				</p>
 			</div>
 		</footer>
-	</body>
+		<script src="js/common.js"></script>
 </body>
 </html>
