@@ -1,0 +1,367 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+header {
+	background: url(../img/header_bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.text__menu a {
+	color: #ffffff;
+	font-family: "Quicksand";
+	font-weight: 400;
+	font-size: 18px;
+	margin-right: 54px;
+}
+.text a:last-child {
+	margin-right: 0;
+}
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+}
+.text {
+	padding-top: 10%;
+	text-align: center;
+}
+h1 {
+	color: #ffffff;
+	font-family: "Quicksand";
+	font-weight: 700px;
+	font-size: 60px;
+}
+.text p {
+	margin: 0 auto;
+	font-size: 20px;
+	color: #fff;
+	font-family: "Quicksand";
+	font-weight: 300;
+	width: 586px;
+	height: 67px;
+}
+.arrow {
+	text-align: center;
+	margin-top: 16%;
+	color: #fff;
+}
+#categories {
+	background: #f5f6f7;
+}
+.categories {
+	width: 90%;
+	margin: 0 auto;
+	height: 143px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.check {
+	padding-top: 60px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+}
+.checkbox {
+	display: none;
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+	cursor: pointer;
+	position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+	width: 25px;             /* Обязательно задаем ширину */
+	height: 24px;            /* Обязательно задаем высоту */
+	border: 2px solid #aa9b77;
+	background-color: #fff;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+	cursor: pointer;
+	content: "";             /* Добавляем наш псевдоэлемент */
+	display: block;			 /* Делаем его блочным элементом */
+	position: absolute;      /* Позиционируем его абсолютным образом */
+	/* Задаем расстояние от верхней, правой, нижней и левой границы */
+	top: 6px;
+	right: 5px;
+	bottom: 6px;
+	left: 5px;
+	background-image: url(../img/fa-check-copia.png);     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+}
+.label {
+	margin-left: 23px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #333333;
+	font-family: "Quicksand";
+	font-weight: 700;
+	font-size: 18px;
+}
+label {
+	margin-right: 40px;
+}
+label:last-child {
+	margin-right: 0;
+}
+.button	{
+	margin-top: 46px;
+}
+button {
+	cursor: pointer;
+	border: 0;
+	width: 204px;
+	height: 52px;
+	border-radius: 3px;
+	background-color: #aa9b77;
+	color: #ffffff;
+	font-family: "Quicksand";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#products {
+	width: 90%;
+	margin: 0 auto;
+}
+.name {
+	align-items: center;
+	margin-top: 87px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.name hr {
+	margin: 0;
+	width: 996px;
+	height: 2px;
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+.name p {
+	text-transform: uppercase;
+	color: #424242;
+	font-family: "Quicksand";
+	font-weight: 700;
+	font-size: 20px;
+}
+.switch__men {
+	float: right;
+}
+.switch__men p {
+	color: #aa9b77;
+	font-family: "Quicksand";
+	font-weight: 700;
+	font-size: 16px;
+}
+.chevron {
+	color: #aa9b77;
+}
+.chevron i:last-child {
+	margin-left: 12px;
+}
+.block__products {
+	margin-top: 85px;
+}
+.blocks {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.block {
+	width: 320px;
+	height: 378px;
+	background-color: #f5f6f7;
+}
+.block:hover {
+	border-radius: 3px;
+	border: 6px solid #aa9b77;
+	background-color: #f5f6f7;
+	border
+}
+.name {
+	align-items: center;
+	margin-top: 87px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.name hr {
+	margin: 0;
+	width: 996px;
+	height: 2px;
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+.name p {
+	text-transform: uppercase;
+	color: #424242;
+	font-family: "Quicksand";
+	font-weight: 700;
+	font-size: 20px;
+}
+.switch__women {
+	float: left;
+}
+.switch__women p {
+	color: #aa9b77;
+	font-family: "Quicksand";
+	font-weight: 700;
+	font-size: 16px;
+}
+.block__top {
+	align-items: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.top__left {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	margin-left: 24px;
+}
+.top__left p {
+	margin-right: 5px;
+	color: #424242;
+	font-family: "Quicksand";
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.top__left i {
+	color: #000;
+}
+.top__right {
+	margin-right: 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+}
+.circle1 {
+	margin-right: 5px;
+	width: 22px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #165eb9;
+}
+.circle2 {
+	margin-right: 5px;
+	width: 22px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #ffe637;
+}
+.circle3{
+	width: 22px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #535253;
+}
+.circle4 {
+	width: 22px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #d3a7ac;
+}
+.circle5 {
+	width: 22px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.img__tshirt {
+	margin-top: 45px;
+	margin-left: 78px;
+}
+.img__pants {
+	margin-left: 102px;
+}
+.img__backpack {
+	margin-top: 20px;
+	margin-left: 85px;
+}
+.img__jacket {
+	margin-top: 30px;
+	margin-left: 69px;
+}
+.img__shoes {
+	margin-left: 73px;
+	margin-top: 82px;
+}
+.img__wtshirt {
+	margin-top: 42px;
+	margin-left: 52px;
+}
+.block__down {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0 auto;
+}
+.block__down p {
+	color: #aa9b77;
+	font-family: "Quicksand";
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.block__down h3 {
+	color: #424242;
+	font-family: "Quicksand";
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
