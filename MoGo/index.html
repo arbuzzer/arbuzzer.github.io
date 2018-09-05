@@ -14,9 +14,9 @@
 		<div class="container">
 			<div class="top">
 				<div class="logo">
-					<a href="#">MoGo</a>
+					<p>MoGo</p>
 				</div>
-				<nav class="top__nav">
+				<nav class="top__nav" id="top__nav">
 					<div class="top__nav__menu">
 						<ul class="menu">
 							<li>
@@ -35,6 +35,12 @@
 								<a href="#contact">Contact</a>
 							</li>
 						</ul>
+					</div>
+					<div class="menu__icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
 					<div class="top__nav__icon">	
 						<a href="#">
@@ -56,7 +62,7 @@
 				to MoGo
 			</h1>
 			<div class="line__header"></div>
-			<input type="button" value="Learn more" href="#about">
+			<button type="button" slowScroll="('#about')" href="javascript://0">Lean More</button>
 		</div>
 	</header>
 	<section id="about">
@@ -345,16 +351,16 @@
 						<img src="img/team1.png" alt="team1">
 						<div class="overlay">
 							<div class="team__social">
-								<i class="fab fa-facebook-f fa-2x"></i>
+								<a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-twitter fa-2x"></i>
+								<a href="https://www.twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-pinterest-p fa-2x"></i>
+								<a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-instagram fa-2x"></i>
+								<a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
 							</div>
 						</div>
 					</div>
@@ -362,16 +368,16 @@
 						<img src="img/team2.png" alt="team2">
 						<div class="overlay">
 							<div class="team__social">
-								<i class="fab fa-facebook-f fa-2x"></i>
+								<a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-twitter fa-2x"></i>
+								<a href="https://www.twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-pinterest-p fa-2x"></i>
+								<a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-instagram fa-2x"></i>
+								<a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
 							</div>
 						</div>	
 					</div>
@@ -379,16 +385,16 @@
 						<img src="img/team3.png" alt="team3">
 						<div class="overlay">
 							<div class="team__social">
-								<i class="fab fa-facebook-f fa-2x"></i>
+								<a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-twitter fa-2x"></i>
+								<a href="https://www.twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-pinterest-p fa-2x"></i>
+								<a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p fa-2x"></i></a>
 							</div>
 							<div class="team__social">
-								<i class="fab fa-instagram fa-2x"></i>
+								<a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
 							</div>
 						</div>	
 					</div>
@@ -424,7 +430,7 @@
 					What we do
 				</h4>
 				<h3>
-					Somefo our work
+					Some of our work
 				</h3>
 				<div class="line__work"></div>
 				<p>
@@ -447,20 +453,20 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="work__photo_ad">
-					<div class="few__photo_ad">
-						<div class="few__photo_ad_c">
+				<div class="work__photo_768">
+					<div class="few__photo_768">
+						<div class="few__photo_768_c">
 							<img src="img/work1.png" alt="work1">
 							<img src="img/work2.png" alt="work2">
 						</div>	
-						<div class="few__photo_ad_c">
+						<div class="few__photo_768_c">
 							<img src="img/work3.png" alt="work3">
 							<img src="img/work4.png" alt="work4">
 						</div>	
 					</div>
-					<div class="few__photo_ad">
+					<div class="few__photo_768">
 						<img src="img/work5.png" alt="work5">
-						<div class="few__photo_ad_c">
+						<div class="few__photo_768_c">
 							<img src="img/work6.png" alt="work6">
 							<img src="img/work7.png" alt="work7">
 						</div>	
@@ -546,7 +552,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="blog">
 		<div class="container">
 			<div class="blog">
 				<div class="blog__header">
@@ -629,12 +635,12 @@
 		<div class="map">
 			<div class="map__text">
 				<i class="fas fa-map-marker-alt fa-2x"></i>
-				<a href="maps.google.com">open map</a>
+				<a href="http://maps.google.com">open map</a>
 				<div class="line__map"></div>
 			</div>		
 		</div>	
 	</section>
-	<footer>
+	<footer id="contact">
 		<div class="container">
 			<div class="block__footer">
 				<div class="left__footer">
@@ -727,5 +733,7 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
