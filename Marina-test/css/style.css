@@ -60,6 +60,7 @@ li {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-direction: row;
 }
 .bg_row img {
 	color: #000;
