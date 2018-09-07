@@ -54,9 +54,19 @@ li {
 	padding-left: 90px;
 	list-style: none;
 }
-
-.bg_top img {
-	width: 100%;
+.bg_row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.bg_row img {
+	color: #000;
+	opacity: 0.5;
+}
+.bg_row img:hover {
+	opacity: 1;
 }
 .bot_menu {
 	background-color: #000;
