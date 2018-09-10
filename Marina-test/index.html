@@ -58,64 +58,77 @@
 	</section>
 	<section>
 		<div class="product_block">
-			<div class="product_row">
-				<div class="product">
-					<img src="img/product1.png" alt="">
-					<p>Mascara Unique</p>
-					<div class="button_buy">
-						<div class="price"><p>799$</p></div>
-						<button>Buy Now</button>
+			<div class="slideshow-container">
+				<div class="mySlides fade">	
+					<div class="product_row">
+						<div class="product">
+							<img src="img/product1.png" alt="">
+							<p>Mascara Unique</p>
+							<div class="button_buy">
+								<div class="price"><p>799$</p></div>
+								<button>Buy Now</button>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/product2.png" alt="">
+							<p>Lipstick Shiseido</p>
+							<div class="button_buy">
+								<div class="price"><p>349$</p></div>
+								<button>Buy Now</button>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="product">
-					<img src="img/product2.png" alt="">
-					<p>Lipstick Shiseido</p>
-					<div class="button_buy">
-						<div class="price"><p>349$</p></div>
-						<button>Buy Now</button>
+				<div class="mySlides fade">		
+					<div class="product_row">
+						<div class="product">
+							<img src="img/product3.png" alt="">
+							<p>Foundation PARURE GOLD</p>
+							<div class="button_buy">
+								<div class="price"><p>234$</p></div>
+								<button>Buy Now</button>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/product4.png" alt="">
+							<p>Palete Kylie</p>
+							<div class="button_buy">
+								<div class="price"><p>569$</p></div>
+								<button>Buy Now</button>
+							</div>
+						</div>
 					</div>
+				</div>
+				<div class="mySlides fade">	
+					<div class="product_row">
+						<div class="product">
+							<img src="img/product5.png" alt="">
+							<p>Conseler GOSH</p>
+							<div class="button_buy">
+								<div class="price"><p>526$</p></div>
+								<button>Buy Now</button>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/product6.png" alt="">
+							<p>Powder Chanelle Matte</p>
+							<div class="button_buy">
+								<div class="price"><p>896$</p></div>
+								<button>Buy Now</button>
+							</div>
+						</div>
+					</div>	
 				</div>
 			</div>
-			<div class="product_row">
-				<div class="product">
-					<img src="img/product3.png" alt="">
-					<p>Foundation PARURE GOLD</p>
-					<div class="button_buy">
-						<div class="price"><p>234$</p></div>
-						<button>Buy Now</button>
-					</div>
-				</div>
-				<div class="product">
-					<img src="img/product4.png" alt="">
-					<p>Palete Kylie</p>
-					<div class="button_buy">
-						<div class="price"><p>569$</p></div>
-						<button>Buy Now</button>
-					</div>
-				</div>
-			</div>
-			<div class="product_row">
-				<div class="product">
-					<img src="img/product5.png" alt="">
-					<p>Conseler GOSH</p>
-					<div class="button_buy">
-						<div class="price"><p>526$</p></div>
-						<button>Buy Now</button>
-					</div>
-				</div>
-				<div class="product">
-					<img src="img/product6.png" alt="">
-					<p>Powder Chanelle Matte</p>
-					<div class="button_buy">
-						<div class="price"><p>896$</p></div>
-						<button>Buy Now</button>
-					</div>
-				</div>
+			<div style="text-align: center"; class="span-dot">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 		</div>
 	</section>
 	<footer>
-		<p>© 2018 MAX by <a href="http://instagram.com/maryn_na">@maryn_na</a></p>
+		
 	</footer>
 	<script>
 		var flag = true;
@@ -129,6 +142,37 @@
 		        flag = true;
 		    }
 		});
+		var slideIndex = 1;
+			showSlides(slideIndex);
+
+		function plusSlides(n){
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n){
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n){
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			
+			if(n > slides.length){
+				slideIndex = 1;	
+			}	
+			if(n < 1){
+				slideIndex = slides.length;
+			}	
+			for(i=0; i < slides.length; i++){
+				slides[i].style.display = "none";
+			}	
+			for(i=0; i < dots.length; i++){
+				dots[i].className = dots[i].className.replace("active","");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className+= " active";	
+		}
 	</script>
 </body>
 </html>
