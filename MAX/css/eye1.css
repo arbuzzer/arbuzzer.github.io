@@ -67,8 +67,6 @@ header {
 	flex-direction: row;
 }
 .bg_row img {
-	width: 20%;
-	height: 20%;
 	opacity: 0.5;
 }
 .bg_row img:hover {
@@ -405,8 +403,4 @@ footer{
 	width: 100%;
 	height: 505px;
 	z-index: 2;
-}
-
-@media screen and (max-width: 1280px) {
-	
 }
