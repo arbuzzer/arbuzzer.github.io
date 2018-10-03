@@ -170,8 +170,10 @@ form input[type="text"] {
 .shopping:hover {
 	color: #ebb1a2;
 }
+#guide {
+	padding-top: 90px;
+}
 .black_block {
-	margin-top: 90px;
 	width: 687px;
 	height: 125px;
 	background-color: #000000;

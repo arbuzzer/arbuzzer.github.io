@@ -57,7 +57,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="product">
 		<div class="product_block">
 			<div class="slideshow-container">
 				<div class="mySlides fade">	
@@ -174,11 +174,11 @@
 				</div>
 			</div>
 			<div style="text-align: center"; class="span-dot">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-				<span class="dot" onclick="currentSlide(4)"></span>
-				<span class="dot" onclick="currentSlide(5)"></span>
+				<a href="#product"><span class="dot" onclick="currentSlide(1)"></span></a>
+				<a href="#product"><span class="dot" onclick="currentSlide(2)"></span></a>
+				<a href="#product"><span class="dot" onclick="currentSlide(3)"></span></a>
+				<a href="#product"><span class="dot" onclick="currentSlide(4)"></span></a>
+				<a href="#product"><span class="dot" onclick="currentSlide(5)"></span></a>
 			</div>
 		</div>
 	</section>
@@ -246,6 +246,14 @@
 			slides[slideIndex-1].style.display = "block";
 			dots[slideIndex-1].className+= " active";	
 		}
+		$(document).ready(function(){
+		    $("#product").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+		});
 	</script>
 </body>
 </html>
