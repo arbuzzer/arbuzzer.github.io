@@ -1,0 +1,514 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	width: 600px;
+	margin: 0 auto;
+}
+div{
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+.b_logo {
+	margin-top: 11px;
+	text-align: center;
+	color: #999999;
+	font-size: 11px;
+	font-weight: 400;
+}
+.under {
+	text-decoration: underline;
+	color: #999999;
+}
+.logo_site {
+	margin-top: 34px;
+	text-align: center;
+}
+nav {
+	margin-top: 24px;
+	height: 30px;
+	background-color: #333333;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+nav a {
+	margin-top: 8px;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.44px;
+}
+.customer {
+	margin-top: 38px;
+	text-align: center;
+}
+.customer h3 {
+	color: #333333;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+}
+.customer p {
+
+}
+.customer .red_text {
+	color: #c63628;
+	font-weight: 700;
+}
+.customer .black_block {
+	line-height: 35px;
+	padding: 5px 15px;
+	background-color: #333333;
+	color: #fff;
+}
+.hr {
+	margin-top: 37px;
+	width: 600px;
+	height: 1px;
+	background-color: #1b1a1a;
+	opacity: 0.2;
+}
+.product h1 {
+	text-align: center;
+	margin-top: 40px;
+	color: #333333;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 35px;
+}
+.size {
+	margin-top: 36px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.size_number {
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	color: #333333;
+	font-size: 17px;
+	font-weight: 700;
+	width: 53px;
+	height: 53px;
+	background-color: #f0f0f0;
+}
+.size_number:nth-child(2n+1) {
+	background-color: #f8f8f8;
+}
+.models {
+	margin-top: 19px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.models_shoes {
+	width: 290px;
+	height: 330px;
+	text-align: center;
+}
+.models .adidas {
+	background-color: #f0f0f0;
+}
+.models .nike {
+	background-color: #f8f8f8;
+}
+.models_shoes p {
+	margin-top: 18px;
+	color: #333333;
+	font-size: 15px;
+	line-height: 30px;
+}
+.red_line {
+	margin-left: 93px;
+	width: 104px;
+	height: 2px;
+	background-color: #c63628;
+}
+.fila_text {
+	margin-top: 39px;
+	text-align: center;
+	color: #333333;
+}
+.fila_text h1 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 35px;
+}
+.fila_text p {
+	font-size: 17px;
+}
+.fila_img {
+	position: relative;
+	margin-top: 37px;
+	height: 300px;
+	background-color: #f8f8f8;
+}
+.fila_shoes {
+	padding-top: 9px;
+	text-align: center;
+}
+.fila_logo {
+	top: 29px;
+	left: 29px;
+	position: absolute;
+}
+.vans_product {
+	position: relative;
+	margin-top: 15px;
+}
+.vans_text {
+	top: 72px;
+	right: 46px;
+	text-align: center;
+	position: absolute;
+}
+.vans_text p {
+	color: #ffffff;
+	font-family: "Times New Roman";
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2.6px;
+}
+.vans_line {
+	margin-top: 10px;
+	margin-left: 72px;
+	width: 75px;
+	height: 1px;
+	background-color: #818181;
+	opacity: 0.4;
+}
+.vans_text h1 {
+	margin-top: -5px;
+	color: #0d78fe;
+	font-size: 85px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.vans_text h5 {
+	margin-top: -10px;
+	color: #818181;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 3.96px;
+}
+.vans_button {
+	cursor: pointer;
+	margin-top: 20px;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #0b6ef0;
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.vans_offer {
+	position: relative;
+	margin-top: 20px;
+	height: 250px;
+	background-color: #f8f8f8;
+}
+.vans_offer_text {
+	padding-top: 45px;
+	padding-left: 29px;
+}
+.vans_offer_text h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.vans_offer_text .red_text {
+	margin: 10px 0 10px 283px;
+	background-color: #db061a;
+	height: 2px;
+	width: 20px;
+}
+.vans_offer_text p {
+	font-size: 15px;
+	line-height: 21px;
+}
+.vans_offer_img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.nike_offer {
+	position: relative;
+	margin-top: 20px;
+	height: 250px;
+	background-color: #f8f8f8;
+}
+.nike_offer_text {
+	padding-top: 57px;
+	padding-left: 329px;
+}
+.nike_offer_text h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.nike_offer_text .red_text {
+	margin: 10px 0;
+	background-color: #db061a;
+	height: 2px;
+	width: 20px;
+}
+.nike_offer_text p {
+	font-size: 15px;
+	line-height: 21px;
+}
+.nike_offer_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.nike_air_text {
+	padding-top: 40px;
+	text-align: center;
+	margin-top: 20px;
+	height: 185px;
+	background-color: #f8f8f8;
+}
+.nike_air_text h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.nike_air_text .red_text {
+	margin: 10px 0 10px 283px;
+	background-color: #db061a;
+	height: 2px;
+	width: 20px;
+}
+.nike_air_text p {
+	font-size: 15px;
+	line-height: 21px;
+}
+.nike_270_img {
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.nike_270_img_column {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.nike_270_img_column img {
+	margin-top: 20px;
+}
+.nike_270_img_column img:first-child {
+	margin-top: 0;
+}
+.nike_97_img {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.nike_color_woman {
+	background: #f8f8f8;
+}
+.nike_color_man {
+	background: #f0f0f0;
+}
+.nike_97 {
+	width: 290px;
+	height: 330px;
+	position: relative;
+	text-align: center;
+}
+.nike_97 p {
+	padding-top: 10px;
+	line-height: 30px;
+}
+.nike_button {
+	cursor: pointer;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #db061a;
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.advantages {
+	margin-top: 21px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.adv_content {
+	width: 149px;
+	height: 60px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-left: 1px solid #f0f0f0;
+}
+.adv_content:first-child {
+	border-left: none;
+}
+.adv_content img {
+	margin: 0 15px;
+}
+.adv_content p {
+	color: #333333;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.company {
+	margin-top: 19px;
+	height: 160px;
+	background-color: #f8f8f8;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.company_block {
+	width: 150px;
+	height: 80px;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.company_block:first-child {
+	border-left: none;
+}
+.first_row .company_block:nth-child(-n+4) {
+	border-top: none;
+}
+.company_row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+}
+.contact {
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.black {
+	width: 240px;
+	height: 90px;
+	background-color: #333333;
+}
+.black p {
+	padding: 15px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 21px;
+}
+.grey {
+	width: 200px;
+	height: 90px;
+	position: relative;
+	background-color: #474747;
+}
+.phone_number {
+	padding-top: 14px;
+	margin-left: 32px;
+	color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.phone_number img {
+	margin-right: 16px;
+}
+.phone_number p {
+	font-size: 15px;
+	line-height: 21px;
+}
+button.red {
+	cursor: pointer;
+	border: none;
+}
+.red {
+	width: 160px;
+	height: 90px;
+	background: #c7161f;
+}
+.red p {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 21px;
+}
+.footer_text {
+	text-align: center;
+	padding-top: 38px;
+	padding-bottom: 50px;
+}
+.footer_text p {
+	font-size: 11px;
+	letter-spacing: 0.22px;
+	line-height: 17px;
+	color: #999999;
+}
+.footer_text a.red_text {
+	color: #db061a;
+}
