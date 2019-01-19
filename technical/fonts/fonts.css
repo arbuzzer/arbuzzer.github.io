@@ -1,0 +1,186 @@
+@font-face {
+	font-family: "Gotham Pro Black";
+	src: url("../fonts/GothamProBlack.eot");
+	src: url("../fonts/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProBlack.woff") format("woff"),
+	url("../fonts/GothamProBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+//*		<div class="accordion">
+			<ul>
+		    	<li tabindex="1">
+		    		<div class="col_overflow">
+		    			<h1>Агротехника</h1>
+		    		</div>
+		    		<div class="col_text">
+		        		<a href="#">
+		        	  		<h1>Агротехника</h1>
+							<p>Цели и предполагаемые задачи внедрения:</p>
+		        		</a>
+		      		</div>
+		    	</li>
+		    	<li tabindex="2">
+		    		<div class="col_overflow">
+		    			<h1>Агротехника</h1>
+		    		</div>
+		    		<div class="col_text">
+		        		<a href="#">
+		        	  		<h1>Агротехника</h1>
+							<p>Цели и предполагаемые задачи внедрения:</p>
+		        		</a>
+		      		</div>
+		    	</li>
+		    	<li tabindex="3">
+		    		<div class="col_overflow">
+		    			<h1>Агротехника</h1>
+		    		</div>
+		    		<div class="col_text">
+		        		<a href="#">
+		        	  		<h1>Агротехника</h1>
+							<p>Цели и предполагаемые задачи внедрения:</p>
+		        		</a>
+		      		</div>
+		    	</li>
+		    	<li tabindex="4">
+		    		<div class="col_overflow">
+		    			<h1>Агротехника</h1>
+		    		</div>
+		    		<div class="col_text">
+		        		<a href="#">
+		        	  		<h1>Агротехника</h1>
+							<p>Цели и предполагаемые задачи внедрения:</p>
+		        		</a>
+		      		</div>
+		    	</li>
+		    	<li tabindex="5">
+		    		<div class="col_overflow">
+		    			<h1>Агротехника</h1>
+		    		</div>
+		    		<div class="col_text">
+		        		<a href="#">
+		        	  		<h1>Агротехника</h1>
+							<p>Цели и предполагаемые задачи внедрения:</p>
+		        		</a>
+		      		</div>
+		    	</li>
+		    </ul>
+		</div>	
+		<div class="feedback_block">
+			<div class="feedback">
+				<h1>Отзывы наших клиентов</h1>
+				<p>Сотрудничество с нашей Компанией поможет <span class="feed_light">снизить затраты на 5-25%</span> общего годового бюджета затрат на автотранспорт.</p>
+				<a href="javascript://">Читать все отзывы</a>
+			</div>
+			<div class="company">
+				
+			</div>
+		</div>
+*/		
+
+
+/**.accordion {
+    width: 100%;
+    max-width: 100%;
+    height: 682px;
+    overflow: hidden;
+    background-size: 100%;
+    margin: 0 auto;
+}
+.accordion ul {
+	position: relative;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+.accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 20%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+}
+.accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.accordion ul li div a {
+	display: block;
+	height: 682px;
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	transition: all 200ms ease;
+}
+.accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.accordion ul li:nth-child(1) { 
+	background: url(../img/agrotechnics.png);
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size: cover;
+}
+.accordion ul li:nth-child(2) {
+	background: url(../img/car.png);
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size: cover;
+}
+.accordion ul li:nth-child(3) {
+	background: url(../img/trucking.png);
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size: cover;
+}
+.accordion ul li:nth-child(4) {
+	background: url(../img/special_equipment.png);
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size: cover;
+}
+.accordion ul li:nth-child(5) {
+	background: url(../img/railway.png);
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size: cover;
+}
+.accordion ul:hover .col_overflow {
+	display: none;
+}
+.accordion ul:hover li {
+	width: 15% !important;
+}
+.accordion ul:hover li a * {
+	opacity: 0 !important;
+}
+.accordion ul:hover li:hover {
+	width: 60% !important;
+}
+.accordion ul:hover li:hover a {
+	background: rgba(1, 1, 1, 0.1);
+}
+.accordion ul:hover li:hover a * {
+	opacity: 1 !important;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+.col_overflow h1 {
+	color: #808080;
+	font-family: "Gotham Pro Black";
+	font-size: 20px;
+}
