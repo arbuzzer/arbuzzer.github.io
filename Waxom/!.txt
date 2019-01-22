@@ -1,0 +1,13 @@
+1. изменть <br> на width
+2. слайдер шапка
+3. адаптивность
+
+jQuery("#all").click(function(){
+  $(this).data("clicked", true);
+  if (jQuery("#all").data("clicked")) {
+	(".second .third").removeClass(".block_act").addClass(".block_inact");
+  } else
+
+});
+
+
