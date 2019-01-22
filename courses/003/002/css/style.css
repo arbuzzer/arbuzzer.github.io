@@ -1,0 +1,29 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+div {
+	box-sizing: border-box;
+}
+.container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+}
+.column {
+	width: 15%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.first-head {
+	min-width: 15%;
+}
+.logo {
+}
