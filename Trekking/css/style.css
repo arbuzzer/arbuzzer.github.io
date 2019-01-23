@@ -61,7 +61,7 @@ h1 {
 }
 .arrow {
 	text-align: center;
-	margin-top: 19%;
+	margin-top: 30%;
 	color: #fff;
 }
 #categories {
@@ -163,7 +163,7 @@ button {
 }
 .name hr {
 	margin: 0;
-	width: 996px;
+	width: 85%;
 	height: 2px;
 	background-color: #ccc;
 	border: 1px solid #ccc;
@@ -212,32 +212,12 @@ button {
 	width: 320px;
 	height: 378px;
 	background-color: #f5f6f7;
+	border: 6px solid #f5f6f7;
 }
 .block:hover {
 	border-radius: 3px;
 	border: 6px solid #aa9b77;
 	background-color: #f5f6f7;
-}
-.name {
-	align-items: center;
-	margin-top: 87px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.name hr {
-	margin: 0;
-	width: 996px;
-	height: 2px;
-	background-color: #ccc;
-	border: 1px solid #ccc;
-}
-.name p {
-	text-transform: uppercase;
-	color: #424242;
-	font-family: "Quicksand";
-	font-weight: 700;
-	font-size: 20px;
 }
 .switch__women {
 	float: left;
@@ -260,23 +240,35 @@ button {
 	padding-top: 25px;
 }
 .top__left {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
 	margin-left: 24px;
+	position: relative;
+	z-index: 9;
 }
-.top__left p {
-	margin-right: 5px;
+.top__left p, .top__left select, .top__left option {
 	color: #424242;
 	font-family: "Quicksand";
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.top__left i {
+.top__left select {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 52px;
+}
+.top_left option {
+	text-align: center;
+}
+.select__arrow {
+	top: 2px;
+	right: 0;
+	z-index: -6;
+	position: absolute;
 	color: #000;
 }
 .top__right {
@@ -294,6 +286,7 @@ button {
 	height: 21px;
 	border-radius: 50%;
 	background-color: #165eb9;
+	border: 2px solid #165eb9;
 }
 .circle2 {
 	margin-right: 5px;
@@ -301,12 +294,14 @@ button {
 	height: 21px;
 	border-radius: 50%;
 	background-color: #ffe637;
+	border: 2px solid #ffe637;
 }
 .circle3 {
 	width: 22px;
 	height: 21px;
 	border-radius: 50%;
 	background-color: #535253;
+	border: 2px solid #535253;
 }
 .circle4 {
 	margin-right: 5px;
@@ -314,12 +309,14 @@ button {
 	height: 21px;
 	border-radius: 50%;
 	background-color: #d3a7ac;
+	border: 2px solid #d3a7ac;
 }
 .circle5 {
 	width: 22px;
 	height: 21px;
 	border-radius: 50%;
 	background-color: #fff;
+	border: 2px solid #fff;
 }
 .img__tshirt-y {
 	display: none;
@@ -505,4 +502,21 @@ footer {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 28px;
+}
+
+@media screen and (max-width: 1366px) {
+	.text {
+		padding-top: 15%;
+	}
+	.arrow {
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.text {
+		padding-top: 25%;
+	}
+	.arrow {
+		margin-top: 30%;
+	}
 }
