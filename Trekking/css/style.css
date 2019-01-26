@@ -14,7 +14,7 @@ a {
 	margin: 0 auto;
 }
 header {
-	background: url(../img/header_bg.png) no-repeat center center fixed;
+	background: url(../img/header_bg.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,6 +118,7 @@ h1 {
 	bottom: 6px;
 	left: 5px;
 	background-image: url(../img/fa-check-copia.png);     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+	background-repeat: no-repeat;
 }
 .label {
 	margin-left: 23px;
@@ -134,10 +135,10 @@ label {
 label:last-child {
 	margin-right: 0;
 }
-.button	{
+.btnblock {
 	margin-top: 46px;
 }
-button {
+.prodbtn {
 	cursor: pointer;
 	border: 0;
 	width: 204px;
@@ -206,6 +207,7 @@ button {
 	display: -o-flex;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .block {
@@ -244,32 +246,59 @@ button {
 	position: relative;
 	z-index: 9;
 }
-.top__left p, .top__left select, .top__left option {
+.top__left p {
 	color: #424242;
 	font-family: "Quicksand";
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.top__left select {
-	cursor: pointer;
-	border: none;
+.dropdown {
+	margin-left: 24px;
+	position: relative;
+	display: inline-block;
+}
+.dropbtn {
+	color: #424242;
+	font-family: "Quicksand";
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
 	background: transparent;
+	border: none;
 	outline: none;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	width: 52px;
+	cursor: pointer;
 }
-.top_left option {
-	text-align: center;
+.fa-chevron-down {
+	padding-left: 5px;
 }
-.select__arrow {
-	top: 2px;
-	right: 0;
-	z-index: -6;
+.dropdown__content {
+	display: none;
 	position: absolute;
-	color: #000;
+	background-color: transparent;
+	border: 2px solid #aa9b77;
+	border-radius: 2px;
+	text-align: left;
+	min-width: 100%;
+	overflow: auto;
+	z-index: 99;
+}
+.dropdown__content a {
+	display: block;
+	color: #424242;
+	font-family: "Quicksand";
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 5px;
+	cursor: default;
+}
+.dropdown a:hover {
+	background-color: #dfdfdf;
+}
+.showdrp {
+	display: block;
 }
 .top__right {
 	margin-right: 25px;
@@ -318,12 +347,6 @@ button {
 	background-color: #fff;
 	border: 2px solid #fff;
 }
-.img__tshirt-y {
-	display: none;
-}
-.img__tshirt-b {
-	display: none;
-}
 .img__tshirt {
 	display: block;
 	margin-top: 48px;
@@ -353,12 +376,6 @@ button {
 	margin-left: 73px;
 	margin-top: 82px;
 	margin-bottom: 61px;
-}
-.img__wtshirt-p {
-	display: none;
-}
-.img__wtshirt-w {
-	display: none;
 }
 .img__wtshirt {
 	display: block;
@@ -469,6 +486,7 @@ footer {
 	text-transform: uppercase;
 }
 .left__footer p {
+	max-width: 300px;
 	color: #ffffff;
 	font-family: "Quicksand";
 	font-size: 10px;
@@ -518,5 +536,264 @@ footer {
 	}
 	.arrow {
 		margin-top: 30%;
+	}
+}
+@media screen and (max-width: 768px) {
+	header {
+		height: 790px;
+	}
+	.text__menu a {
+		margin-right: 42px;
+	}
+	.text__menu a:last-child {
+		margin-right: 0;
+	}
+	.text {
+		padding-top: 35%;
+	}
+	.text h1 {
+		font-size: 40px;
+	}
+	.text p {
+		padding-top: 15px;
+		font-size: 15px;
+	}
+	.checkbox-custom {
+		width: 20px;
+    	height: 19px;
+	}
+	.label {
+		font-size: 16px;
+	}
+	.prodbtn {
+		width: 190px;
+		height: 48px;
+		font-size: 13px;
+	}
+	.categories {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.check {
+		padding-top: 0;
+	}
+	.checkbox:checked + .checkbox-custom::before {
+		top: 3px;
+		right: 2px;
+		bottom: 4px;
+		left: 3px;
+	}
+	.btnblock {
+		margin-top: 0;
+	}
+	.name {
+		margin-top: 50px;
+	}
+	.name p {
+		font-size: 18px;
+	}
+	.name hr {
+		height: 1px;
+	}
+	.switch p {
+		padding-top: 0;
+	}
+	.switch {
+		position: absolute;
+	}
+	.switch__men {
+		right: 5%;
+	}
+	.switch__women {
+		left: 5%;
+	}
+	.chevron {
+		padding-top: 5px;
+	}
+	.block__products {
+		margin-top: 40px;
+	}
+	.block {
+		margin: 10px 0;
+	}
+	.block__down p {
+		font-size: 16px;
+	}
+	.block__down h3 {
+		font-size: 20px;
+	}
+	.about {
+		height: 320px;
+	}
+	.fieldset fieldset {
+		padding: 7% 10%;
+	}
+	.fieldset fieldset legend {
+		font-size: 18px;
+	}
+	.fieldset fieldset p {
+		font-size: 15px;
+	}
+	footer {
+		height: 230px;
+	}
+	.footer__content {
+		padding-top: 5%;
+	}
+	.left__footer h2 {
+		font-size: 18px;
+	}
+	.left__footer p {
+		font-size: 9px;
+	}
+	.footer_menu {
+		font-size: 13px;
+	}
+	.design p {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 480px) {
+	header {
+		height: 100vh;
+	}
+	.menu {
+		padding-top: 20px;
+	}
+	.text {
+		padding-top: 40%;
+	}
+	.text h1 {
+		font-size: 32px;
+	}
+	.text p {
+		font-size: 14px;
+	}
+	.arrow {
+		margin-top: 50%;
+	}
+	.check label {
+		margin-right: 32px;
+	}
+	.check label:last-child {
+		margin-right: 0;
+	}
+	.label {
+		margin-left: 12px;
+		font-size: 14px;
+	}
+	.checkbox-custom {
+		width: 18px;
+		height: 17px;
+	}
+	.checkbox:checked + .checkbox-custom::before {
+		top: 2px;
+		right: 0px;
+		bottom: 1px;
+		left: 2px;
+	}
+	.prodbtn {
+		width: 172px;
+		height: 44px;
+		font-size: 12px;
+	}
+	.name {
+		margin-top: 32px;
+	}
+	.name p {
+		font-size: 16px;
+	}
+	.switch p {
+		font-size: 14px;
+	}
+	.chevron i:last-child {
+		margin-left: 9px;
+	}
+	.blocks {
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	.wo__name hr {
+		width: 78%;
+	}
+	.twitter-items p {
+		font-size: 14px;
+	}
+	.footer__content {
+		flex-direction: column;
+	}
+	.left__footer {
+		text-align: center;
+	}
+	.footer__menu {
+		padding-top: 20px;
+		font-size: 13px;
+	}
+	.design p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.text__menu {
+		display: none;
+	}
+	.text {
+		padding-top: 24%;
+	}
+	.text h1 {
+		font-size: 30px;
+	}
+	.text p {
+		font-size: 17px;
+	}
+	.arrow {
+		margin-top: 35%;
+	}
+	.arrow i.fa-3x {
+		font-size: 2em;
+	}
+	.categories {
+		width: 95%;
+		height: 110px;
+	}
+	.label {
+		margin-left: 6px;
+		font-size: 11px;
+	}
+	.checkbox-custom {
+		width: 16px;
+		height: 16px;
+	}
+	.checkbox:checked + .checkbox-custom::before {
+		top: 2px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.prodbtn {
+		width: 145px;
+		height: 37px;
+		font-size: 10px;
+	}
+	.name hr {
+		width: 80%;
+	}
+	.wo__name hr {
+		width: 70%;
+	}
+	.about {
+		height: 360px;
+	}
+	.twitter-items p {
+		font-size: 13px;
+	}
+	.left__footer h2 {
+		font-size: 16px;
+	}
+	.footer__menu {
+		padding-top: 15px;
+		font-size: 12px;
 	}
 }
