@@ -8,13 +8,15 @@
 </head>
 <body>
 		<header>
-			<div class="container">
+			<!--<div class="container">
 				<div class="heading">
 					<a href="#">
 						<img src="img/logo.png" alt="Golden" class="logo">
 					</a>
+					<span class="open" id="open" onclick="openNav()">&#9776</span>
 					<nav id="menu" class="menu">
-						<div class="topnav">
+						<div class="topnav" id="topnav">
+								<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
 							<a href="index.html">Home</a>
 							<a href="#services">Services</a>
 							<a href="#portfolio">Portfolio</a>
@@ -23,6 +25,31 @@
 						</div>
 					</nav>
 				</div>
+				<div class="titles">
+					<div class="title_first">
+						Welcome to our studio!
+					</div>
+					<h1>
+						It's nice to Meet you
+					</h1>
+				</div>
+				<a class="button" href="#">Tell Me More</a>
+			</div>-->	
+			<div class="wrapper">
+				<div class="heading">
+					<a href="#">
+						<img src="img/logo.png" alt="Golden" class="logo">
+					</a>
+					<div class="nav" id="nav">
+						<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+						<a href="#">Home</a>
+						<a href="#">Services</a>
+						<a href="#">Portfolio</a>
+						<a href="#">About</a>
+						<a href="#">Contact</a>
+					</div>
+					<span class="open" id="open" onclick="openNav()">&#9776</span>
+				</div>	
 				<div class="titles">
 					<div class="title_first">
 						Welcome to our studio!
@@ -170,6 +197,15 @@
 				</p>
 			</div>
 		</footer>
-		<script src="js/common.js"></script>
+		<script>
+			function openNav() {
+				document.getElementById("open").style.display = "none";
+				document.getElementById("nav").style.width = "100%";
+			}
+			function closeNav() {
+				document.getElementById("nav").style.width = "0";
+				document.getElementById("open").style.display = "block";
+			}
+		</script>
 </body>
 </html>
