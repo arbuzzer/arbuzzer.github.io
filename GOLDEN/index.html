@@ -177,25 +177,19 @@
 	</footer>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#nav").on("click","a", function(event) {
-				event.preventDefault(); //отмена стандартной прокрутки
-				var id = $(this).attr('href'), //берем айди блока с атрибутами href
-					top = $(id).offset().top; //расчет высоты от начала страницы до блока
-				$('body,html').animate({scrollTop: top}, 2000); //анимация перехода со скоростью ****мс
+		$(document).ready(function() {
+			$('.menu_icon').on('click', function() {
+				$(this).closest('.menu').toggleClass('menu_state_open');
+			});
+			$('.menu_item').on('click', function() {
+				event.preventDefault();
+				var id = $(this).attr('href'),
+					top =$(id).offset().top;
+				$('html,body').animate({scrollTop: top}, 1500);
+				$(this).closest('.menu')
+				.removeClass('menu_state_open');
 			});
 		});
-		(function($){
-			$(function() {
-				$('.menu_icon').on('click', function() {
-					$(this).closest('.menu').toggleClass('menu_state_open');
-				});
-				$('.menu_item').on('click', function() {
-					$(this).closest('.menu')
-					.removeClass('menu_state_open');
-				});
-			});
-			})(jQuery);
 	</script>
 </body>
 </html>

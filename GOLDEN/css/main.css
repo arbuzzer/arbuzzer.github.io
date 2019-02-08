@@ -325,7 +325,7 @@ footer p {
 		padding-top: 13%;
 		background-color: rgba(0, 0, 0, 0.9);
 		z-index: 1000;
-		overflow: hidden;
+		overflow: auto;
 	}
 	.menu_item {
 		display: block;
