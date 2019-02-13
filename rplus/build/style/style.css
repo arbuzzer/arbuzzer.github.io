@@ -427,3 +427,9 @@ footer {
     font-size: 3.5vw; }
   footer p {
     font-size: 2.5vw; } }
+@media screen and (max-width: 400px) {
+  .service-info {
+    max-width: 400px; }
+  .service-info p {
+    display: contents; }
+ }
