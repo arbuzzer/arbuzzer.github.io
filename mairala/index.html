@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="build/script/jquery-3.3.1.min.js" defer></script>
-    <script src="build/script/slick.min.js" defer></script>
-    <script src="build/script/script.js" defer></script>
+    <script src="src/script/jquery-3.3.1.min.js" defer></script>
+    <script src="src/script/slick.min.js" defer></script>
+    <script src="src/script/script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="head-top-bg">
             <div class="container">
                 <div class="head-top">
@@ -151,10 +151,14 @@
                 congue nihil imperdiet doming id quod mazim</p>
         </div>
         <div class="portfolios-img-block">
-            <img src="img/project-1.png" alt="Our project">
-            <img src="img/project-2.png" alt="Our project">
-            <img src="img/project-3.png" alt="Our project">
-            <img src="img/project-4.png" alt="Our project">
+            <div class="two-img-block">
+                <img src="img/project-1.png" alt="Our project">
+                <img src="img/project-2.png" alt="Our project">
+            </div>
+            <div class="two-img-block">
+                <img src="img/project-3.png" alt="Our project">
+                <img src="img/project-4.png" alt="Our project">
+            </div>
         </div>
         <div class="portfolios-twitter-bg">
             <div class="container">
@@ -166,10 +170,14 @@
             </div>  
         </div>      
         <div class="portfolios-img-block">
-            <img src="img/project-1.png" alt="Our project">
-            <img src="img/project-2.png" alt="Our project">
-            <img src="img/project-3.png" alt="Our project">
-            <img src="img/project-4.png" alt="Our project">
+            <div class="two-img-block">
+                <img src="img/project-1.png" alt="Our project">
+                <img src="img/project-2.png" alt="Our project">
+            </div>
+            <div class="two-img-block">
+                <img src="img/project-3.png" alt="Our project">
+                <img src="img/project-4.png" alt="Our project">
+            </div>
         </div>
         <div class="portfolios-button">
             <a href="#" class="button">see all <i class="fas fa-long-arrow-alt-right"></i></a>
@@ -288,6 +296,47 @@
                 <p>Nam liber tempor cum soluta nobis eleifend option 
                    congue nihil imperdiet doming id quod mazim</p>
             </div>
+            <div class="blog-content">
+                <div class="blog-news">
+                    <div class="blog-bounce"></div>
+                    <div class="blog-text">
+                        <p class="blog-text-date">10 April 2014</p>
+                        <h2>Typi non habent claritatem insitam</h2>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                            vero eros et accumsan et iusto odio dignissim qui <a href="#">[...]</a></p>
+                    </div>
+                    <span class="blog-img">
+                        <img src="img/camera.png" alt="Camera">
+                    </span>
+                </div>
+                <div class="blog-news">
+                    <div class="blog-bounce"></div>
+                    <div class="blog-text">
+                        <p class="blog-text-date">20 March 2014</p>
+                        <h2>Typi non habent claritatem insitam</h2>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                            vero eros et accumsan et iusto odio dignissim qui <a href="#">[...]</a></p>
+                    </div>
+                    <span class="blog-img">
+                        <img src="img/camera.png" alt="Camera">
+                    </span>
+                </div>
+                <div class="blog-news">
+                    <div class="blog-bounce"></div>
+                    <div class="blog-text">
+                        <p class="blog-text-date">10 January 2014</p>
+                        <h2>Typi non habent claritatem insitam</h2>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                            vero eros et accumsan et iusto odio dignissim qui <a href="#">[...]</a></p>
+                    </div>
+                    <span class="blog-img">
+                        <img src="img/camera.png" alt="Camera">
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact">
@@ -301,7 +350,7 @@
                         <input type="text" placeholder="Name*">
                         <input type="text" placeholder="Email*">
                     </div>
-                    <input type="text" placeholder="Message..." class="input-mes">
+                    <textarea name="Message" id="message" placeholder="Message..."></textarea>
                     <hr>
                     <a href="#" class="button">Submit</a>
                 </div>
@@ -312,13 +361,13 @@
         <div class="footer-top-bg">
             <div class="container">
                 <div class="footer-top">
-                    <div class="footer-top-block footer-site">
+                    <div class="footer-site footer-top-block">
                         <h1>Mairala</h1>
                         <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
                         <p>eugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
                             delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta </p>
                     </div>
-                    <div class="footer-top-block footer-posts">
+                    <div class="footer-posts footer-top-block">
                         <h2 class="footer-title">Recent posts</h2>
                         <div class="posts">
                             <p>March 30, 2014</p>
@@ -336,7 +385,7 @@
                             <hr>
                         </div>
                     </div>
-                    <div class="footer-top-block footer-twitter">
+                    <div class="footer-twitter footer-top-block">
                         <h2 class="footer-title">twitter feeds</h2>
                         <div class="posts">
                             <p>about 2 days ago <a href="#">@kristianplatt</a></p>
@@ -354,7 +403,7 @@
                             <hr>
                         </div>
                     </div>
-                    <div class="footer-top-block footer-address">
+                    <div class="footer-address footer-top-block">
                         <h2 class="footer-title">our address</h2>
                         <div class="address">
                             <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.

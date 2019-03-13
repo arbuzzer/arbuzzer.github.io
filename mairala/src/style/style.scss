@@ -859,6 +859,11 @@ h1, h2, h3, h4, p, a {
     }
 }
 @media screen and (max-width: 778px) {
+    .contact-input {
+        textarea {
+            max-width: 87%;
+        }
+    }
     .input-row {
         input {
             max-width: 100%;
@@ -917,6 +922,11 @@ h1, h2, h3, h4, p, a {
     }
 }
 @media screen and (max-width: 480px) {
+    .head-title {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
     .menu-links {
         height: 100%;
     }
