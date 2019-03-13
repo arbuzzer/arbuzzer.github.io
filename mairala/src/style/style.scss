@@ -274,7 +274,7 @@ h1, h2, h3, h4, p, a {
         padding: 1.75rem 0 1.5rem 0;
     }
     p {
-        width: 335px;
+        max-width: 335px;
         color: $gray-text;
         font-size: 1rem;
         font-weight: 400;
