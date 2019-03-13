@@ -91,7 +91,7 @@ h1, h2, h3, h4, p, a {
         margin-right: 45px;
     }
     &:hover {
-        border-bottom: 5px solid $brown;
+        color: $brown;
     }
     &.active-nav {
         border-bottom: 5px solid $brown;
@@ -330,6 +330,7 @@ h1, h2, h3, h4, p, a {
     img {
         max-width: 100%;
         object-fit: scale-down;
+        position: relative;
     }
 }
 // .portfolios-img-block {
@@ -940,5 +941,48 @@ h1, h2, h3, h4, p, a {
         h2 {
             text-align: center;
         }
+    }
+}
+.proj-img {
+    position: relative;
+    &:hover .proj-hover{
+        display: block;
+    }
+    img {
+        display: block;
+    }
+    .proj-hover {
+        display: none;
+        width: 92%;
+        height: 92%;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        overflow: hidden;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+.proj-hover-text {
+    margin-top: 25%;
+    color: #fff;
+    font-family: $font-raleway;
+    text-transform: uppercase;
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    hr {
+        display: inline-block;
+        margin: 25px 0;
+        width: 36px;
+        height: 4px;
+        background-color: #fff;
+        border: none;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 2.8px;
     }
 }
